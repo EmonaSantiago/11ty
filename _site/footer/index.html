@@ -1,1 +1,48 @@
-<h1>Footer</h1>
+<footer>
+  <p class="logo">vip-it.nl</p>
+  <p>IT omscholing voor mensen met een visuele beperking</p>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/over-ons">Over ons</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</footer>
+<style>
+  .logo {
+    font-weight: 500;
+    color: rgb(193, 3, 193);
+  }
+
+  footer {
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--clr-light-purple);
+  }
+
+  @media (min-width: 70em) {
+    ul {
+      flex-direction: row;
+      gap: 2em;
+    }
+  }
+</style>
